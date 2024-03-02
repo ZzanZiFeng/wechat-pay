@@ -1,0 +1,30 @@
+{
+	"name": "@wechat-pay/wechat-spy-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon ./dist/bin/www.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tsc": "tsc --project tsconfig.json -w",
+		"clean": "rimraf ./dist",
+		"copy-js-win": "xcopy /I /S /Y src\\*.js dist\\",
+		"copy-js-mac": "rsync -R $(find src -name '*.js') ./dist/"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fidm/x509": "^1.2.1",
+		"@types/node": "^20.11.0",
+		"axios": "^1.6.5",
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"log4js": "^6.9.1",
+		"mongoose": "^8.0.4",
+		"morgan": "^1.10.0",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.0",
+		"wechatpay-nodejs-sdk": "^0.0.7"
+	}
+}

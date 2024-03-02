@@ -1,0 +1,21 @@
+{
+  "name": "wechat-pay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:client": "cd packages/wechat-spy-client & pnpm dev",
+    "dev:server": "cd packages/wechat-spy-server & pnpm run start",
+    "tsc:win": "cd packages/wechat-spy-server & pnpm run clean & pnpm run copy-js-win & pnpm run tsc",
+    "tsc:mac": "cd packages/wechat-spy-server & pnpm run clean & pnpm run copy-js-mac & pnpm run tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
